@@ -1,0 +1,26 @@
+[project]
+name = "cloud-db-python-toolkit"
+version = "0.1.0"
+description = "Multi-cloud database automation utilities (AWS Aurora, GCP AlloyDB/Cloud SQL) and Python DSA patterns."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "boto3>=1.35.0",
+    "pymysql>=1.1.1",
+    "psycopg[binary]>=3.2.0",
+    "google-cloud-alloydb-connector>=1.5.0",
+    "requests>=2.32.0",
+    "python-dotenv>=1.0.1",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.0",
+    "ruff>=0.8.0",
+    "jupyter>=1.1.1",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
